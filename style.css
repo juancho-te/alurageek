@@ -68,13 +68,18 @@ body{
     border-color: #2A7AE4;
     border-width: 1px; 
     margin-left: 20px;
+    border:0px;
 }
 
 .logo__search {
     width:55%;
     align-items: center;
 }
+.logo__search input{
+    border:0;
+    border-radius: 10px 10px;
 
+}
 
 .login__button{
     width:20%;
@@ -395,8 +400,7 @@ input{
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
     .cinco{
-        display:none;
-        
+        display:none;   
     }
     .seis{
         display:none;
@@ -406,18 +410,35 @@ input{
     }
 
     .products img{
-        width: 164px;
-        height: 174px;
+        width: 154px;
+        height: 164px;
     }
     .une{
         display:block;
-    
         width:50%;
         padding:0px;
         margin: 0px;
         justify-content:space-between;
         
     }
+    .logo__search input{
+        border:0;
+        border-radius: 10px 10px;
+        width:100%;
+    }
+    .lupa {
+        /*border:1px solid black !important;*/
+        width:5%;
+        padding-left:2px;
+    }
+    .article__container{
+
+padding: 0;
+margin: 0;
+     
+    }
+
+    
 
 }
 
