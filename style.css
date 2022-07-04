@@ -281,15 +281,20 @@ body{
 }
 /************* fooooter  ***************************/
 .footer__container{
-
     display: flex;
     flex-direction:column;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+.une{
+    display:inline-flex;
+
+    width:50%;
+    padding:0px;
+    margin: 0px;
+    justify-content:space-between;
     
-
-
 }
 .footer__items{
     display: flex;
@@ -300,13 +305,16 @@ body{
     width:25%;
 }
 .mapa{
-    width:25%;
+    width:50%;
     padding:0;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+
+    
+
 
 }
 .mapa ul{
@@ -324,7 +332,6 @@ body{
     font-size: 16px;
     line-height: 19px;
     color: #464646;
-
 }
 .form__contact{
     width:50%;
@@ -383,3 +390,35 @@ input{
     padding-bottom: 15px;
     width:100%;
 }
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .cinco{
+        display:none;
+        
+    }
+    .seis{
+        display:none;
+    }
+    body {
+
+    }
+
+    .products img{
+        width: 164px;
+        height: 174px;
+    }
+    .une{
+        display:block;
+    
+        width:50%;
+        padding:0px;
+        margin: 0px;
+        justify-content:space-between;
+        
+    }
+
+}
+
+
