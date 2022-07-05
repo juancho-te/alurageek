@@ -137,6 +137,7 @@ body{
 }
 .banner__titulo1{
     width: 751px;
+    width: auto;
     height: 61px;
     font-family: 'Raleway';
     font-style: normal;
@@ -148,6 +149,7 @@ body{
 .banner__titulo2{
     width: 751px;
     height: 26px;
+    width: auto;
     
     font-family: 'Raleway';
     font-style: normal;
@@ -160,8 +162,6 @@ body{
 .button_banner{
     width: 129px;
     height: 51px;
-
-/* Azul/100% */
     background: #2A7AE4;
 }
 
@@ -396,7 +396,7 @@ input{
     width:100%;
 }
 
-
+/************************************** tablet ************************************************/
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 
     .cinco{
@@ -438,6 +438,89 @@ margin: 0;
      
     }
 
+}
+
+/********************************Mobile****************************************/
+@media only screen and (max-width: 575px) {
+
+    .input__search{
+        display: none;
+    }
+    .button__login{
+        width: auto;
+        order:-1;
+    }
+
+    .banner__titulo1{
+        width:auto;
+    }
+    .banner__titulo2{
+        width:auto;
+    }
+    .footer__container{
+        height:800px !important;
+        width:90%;
+    }
+    
+    .tres{
+        display:none;   
+    }
+
+    .cuatro{
+        display:none;
+    }
+
+    .cinco{
+        display:none;   
+    }
+
+    .seis{
+        display:none;
+    }
+
+    body {
+
+    }
+    .une{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    
+        width:100%;
+    }
+    .footer__items{
+        display: flex;
+        flex-direction:column;
+        align-content: center;
+        align-items: center;
+    }
+
+    .mapa__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapa{
+        display: flex;
+        flex-direction:column;
+
+        align-items: center;
+
+    }
+    .logo{
+        padding:0;
+        margin:0;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form__contact{
+        width:100%;
+    }
     
 
 }
