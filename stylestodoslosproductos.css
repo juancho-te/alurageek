@@ -6,18 +6,12 @@ header .login__container{
     margin:0px;
 
 }
-nav .banner__container {
-    width:100%;
-    height: 352px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(/assets/banner-image.png);
-    background-repeat: no-repeat;
-    background-position: center; /* Center the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
+
 section .article__container{
     width:100%;
     height: 1100px;
     margin:0px;
+    flex-wrap: wrap;
 }
 footer .footer__container{
     width:100%;
@@ -30,6 +24,11 @@ footer .footer__container{
 body{
     background: #F5F5F5;
 }
+
+li{
+    list-style:none;
+}
+
 
 /*------------------desktop  styles -----------------*/
 
@@ -119,59 +118,22 @@ body{
 /******************  bannner ***********************/
 
 
-.banner__container{
-    /*border:1px solid red !important;*/
-    display:flex;
-    flex-direction:column;
-
-    align-items: center;
-    justify-content: flex-end;
- 
-}
-.banner__container__items{
-    width:90%;
-    /*border:1px solid white;*/
-    color: #FFFFFF;
-    margin-bottom:40px;
-}
-.banner__titulo1{
-    width: 751px;
-    width: auto;
-    height: 61px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 52px;
-    line-height: 61px;
-}
-
-.banner__titulo2{
-    width: 751px;
-    height: 26px;
-    width: auto;
-    
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 26px;
-    color: #FFFFFF;
-}
-
-.button_banner{
-    width: 129px;
-    height: 51px;
-    background: #2A7AE4;
-}
 
 /******************  articles*********************/
 
 .article__container{
-
     display:flex;
     flex-direction:column;
     align-items: center;
- 
+    flex-wrap: wrap;
+}
+.products{
+    height:auto;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-around;
+
 }
 
 
@@ -218,14 +180,10 @@ body{
 
 
 .products_description{
-
-    flex-direction:column;
-
-
-    
+    flex-direction:column;  
 }
 .section{
-    width: 148px;
+    width:auto;
     height: 38px;
 
     font-family: 'Raleway';
@@ -316,10 +274,6 @@ body{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
-    
-
-
 }
 .mapa ul{
     list-style: none;
@@ -376,7 +330,7 @@ input{
   }
 .txtMensaje::placeholder{
     text-align: left; 
-  }
+}
 
 
 .btnSubmit{
@@ -394,24 +348,31 @@ input{
     padding-bottom: 15px;
     width:100%;
 }
+/************************************t ************************************************/
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .article__container{
+    height:1700px !important;
+
+    }    
+
+}
+
 
 /************************************** tablet ************************************************/
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-
-    .cinco{
-        display:none;   
-    }
-    .seis{
-        display:none;
-    }
-    body {
-
-    }
 
     .products img{
         width: 154px;
         height: 164px;
     }
+
+    section .article__container{
+        width:100%;
+        height: 1650px;
+        margin:0px;
+    }
+
     .une{
         display:block;
         width:50%;
@@ -431,10 +392,8 @@ input{
         padding-left:2px;
     }
     .article__container{
-
-padding: 0;
-margin: 0;
-     
+        padding: 0;
+        margin: 0;
     }
 
 }
@@ -461,25 +420,13 @@ margin: 0;
         width:90%;
     }
     
-    .tres{
-        display:none;   
+    section .article__container{
+        width:100%;
+        height: 2500px;
+        margin:0px;
     }
 
-    .cuatro{
-        display:none;
-    }
 
-    .cinco{
-        display:none;   
-    }
-
-    .seis{
-        display:none;
-    }
-
-    body {
-
-    }
     .une{
 
         display: flex;
