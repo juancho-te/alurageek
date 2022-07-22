@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="title" content="Alura Geek">
     <meta name="description" content="Descripción de la WEB">    
-    <link href="stylehomelogin.css" rel="stylesheet">    
+    <link href="stylehomelogin.css" rel="stylesheet">  
+     
 </head>  
 <body>
         
@@ -30,11 +31,11 @@
         
         <div class="banner__container">
             <div class="banner__container__items">
-                <form class="form__container">
+                <form class="form__container" id="form__container">
                     <h2 class="elementos_form" id="titulo1">Iniciar seccion</h2>
-                    <input type="email" class="elementos_form" placeholder="Escriba su correo">
-                    <input type="password" class="elementos_form"  placeholder="Escriba su contraseña">
-                    <button type="submit" class="button__login">Entrar</button>
+                    <input type="email" class="elementos_form" id="emailTxt" placeholder="Escriba su correo">
+                    <input type="password" class="elementos_form" id="passwordTxt" placeholder="Escriba su contraseña">
+                    <button type="submit" class="button__login" id="loginBtn">Entrar</button>
                 </form>         
             </div>   
         </div>
@@ -84,4 +85,5 @@
     </footer>
 
 </body>  
+<script src="script.js"></script> 
 </html>
