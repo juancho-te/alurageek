@@ -21,10 +21,11 @@ section .article__container{
 }
 footer .footer__container{
     width:100%;
-    height: 400px;
-    margin:0px;
+    margin-top:90px;
+    /*padding-top: 70px;*/
     /* Azul/10% */
     background: #EAF2FD;
+    /*border: solid 1px;*/
 
 }
 body{
@@ -227,6 +228,8 @@ body{
 .section{
     width: 148px;
     height: 38px;
+    /*border: solid 1px;*/
+    padding-bottom: 30px;
 
     font-family: 'Raleway';
     font-style: normal;
